@@ -63,6 +63,8 @@ const app = express();
  */
 
 //closure
+
+const port = process.env.PORT || config.get("port");
 app.use(
   cors({
     origin: "http://localhost::5500",
